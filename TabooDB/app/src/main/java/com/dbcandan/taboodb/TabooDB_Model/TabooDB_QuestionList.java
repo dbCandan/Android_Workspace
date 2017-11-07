@@ -2,6 +2,7 @@ package com.dbcandan.taboodb.TabooDB_Model;
 
 import java.util.Stack;
 
+//  Hata, 
 public class TabooDB_QuestionList {
     private Stack<TabooDB_Question> questionStack;
 
@@ -401,7 +402,7 @@ public class TabooDB_QuestionList {
         getQuestionStack().add(new TabooDB_Question("GERİLİM", "AKIM", "VOLT", "ELEKTRİK", "DEVRE", "POTANSİYEL"));
         getQuestionStack().add(new TabooDB_Question("GEZEGEN", "GÜNEŞ", "DÜNYA", "MARS", "UYDU", "UZAY"));
         getQuestionStack().add(new TabooDB_Question("GİRDAP", "ANAFOR", "BURGAÇ", "DÖNMEK", "SU", "DENİZ"));
-        getQuestionStack().add(new TabooDB_Question("GİTMEK", "BRİYANTİN", "SAÇ", "SÜRMEK", "JÖLE", "KREM"));
+        getQuestionStack().add(new TabooDB_Question("BRİYANTİN", "BERBER", "SAÇ", "SÜRMEK", "JÖLE", "KREM"));
         getQuestionStack().add(new TabooDB_Question("GİZEM", "SIR", "TUHAF", "BİLİNMEZ", "OLAY", "DOĞAÜSTÜ"));
         getQuestionStack().add(new TabooDB_Question("GLOBAL", "KÜRESEL", "DÜNYA", "BÜTÜNLEŞMEK", "BÖLGESEL", "ÜLKE"));
         getQuestionStack().add(new TabooDB_Question("GLUKAGON", "KAN", "ŞEKER", "İNSÜLIN", "PANKREAS", "HORMON"));
