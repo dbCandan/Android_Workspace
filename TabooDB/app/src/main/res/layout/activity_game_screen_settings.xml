@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.dbcandan.taboodb.GameScreenSettingsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="4dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/id_nested_group1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_txt_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/id_txt_group_desc1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_txt_settings"
+                    android:text="@string/str_txt_group1_hint"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_mainScreen_txt"
+                    android:textColorHint="@color/color_mainScreen_txt"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player1_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player1_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_txt_group_desc1" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player2_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player2_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player1_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player3_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player3_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player2_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player4_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player4_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player3_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player5_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player5_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player4_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player6_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player6_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player5_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player7_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player7_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player6_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player8_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player8_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player7_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player9_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player9_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player8_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g1_player10_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player10_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g1_player9_name" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/id_nested_group2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_txt_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_nested_group1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/id_txt_group_desc2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_txt_settings"
+                    android:text="@string/str_txt_group2_hint"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_mainScreen_txt"
+                    android:textColorHint="@color/color_mainScreen_txt"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player1_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player1_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_txt_group_desc2" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player2_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player2_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player1_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player3_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player3_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player2_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player4_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player4_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player3_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player5_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player5_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player4_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player6_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player6_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player5_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player7_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player7_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player6_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player8_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player8_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player7_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player9_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player9_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player8_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g2_player10_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player10_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g2_player9_name" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/id_nested_group3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_txt_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_nested_group2">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/id_txt_group_desc3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_txt_settings"
+                    android:text="@string/str_txt_group3_hint"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_mainScreen_txt"
+                    android:textColorHint="@color/color_mainScreen_txt"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player1_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player1_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_txt_group_desc3" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player2_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player2_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player1_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player3_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player3_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player2_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player4_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player4_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player3_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player5_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player5_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player4_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player6_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player6_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player5_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player7_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player7_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player6_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player8_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player8_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player7_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player9_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player9_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player8_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g3_player10_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player10_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g3_player9_name" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/id_nested_group4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_txt_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_nested_group3">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/id_txt_group_desc4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_txt_settings"
+                    android:text="@string/str_txt_group4_hint"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_mainScreen_txt"
+                    android:textColorHint="@color/color_mainScreen_txt"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player1_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player1_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_txt_group_desc4" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player2_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player2_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player1_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player3_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player3_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player2_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player4_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player4_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player3_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player5_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player5_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player4_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player6_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player6_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player5_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player7_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player7_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player6_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player8_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player8_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player7_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player9_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player9_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player8_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g4_player10_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player10_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g4_player9_name" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/id_nested_group5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_txt_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_nested_group4">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/id_txt_group_desc5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_txt_settings"
+                    android:text="@string/str_txt_group5_hint"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_mainScreen_txt"
+                    android:textColorHint="@color/color_mainScreen_txt"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player1_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player1_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_txt_group_desc5" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player2_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player2_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player1_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player3_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player3_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player2_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player4_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player4_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player3_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player5_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player5_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player4_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player6_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player6_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player5_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player7_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player7_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player6_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player8_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player8_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player7_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player9_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player9_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player8_name" />
+
+                <EditText
+                    android:id="@+id/id_edit_txt_g5_player10_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_edittxt_settings"
+                    android:hint="@string/str_txt_player10_hint"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_g5_player9_name" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/id_btn_start_game"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_button_start_game"
+            android:onClick="OnClick_StartGame"
+            android:text="@string/str_btn_start"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_nested_group5" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

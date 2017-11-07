@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_game_screen_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.dbcandan.taboodb.GameScreenActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:padding="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/id_constraintLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_txt_settings"
+            android:padding="8dp"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/id_txt_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_txt_gray_settings"
+                android:text="@string/str_txt_group_name"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/id_txt_group_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_txt_gray_settings"
+                android:text="@string/str_txt_group_point"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/id_constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_txt_settings"
+            android:padding="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_constraintLayout1">
+
+            <ProgressBar
+                android:id="@+id/id_pBar_groupTime"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="10"
+                android:progressDrawable="@drawable/style_progressbar_settings"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/id_txt_group_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/str_txt_group_time"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/id_constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_txt_settings"
+            android:padding="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_constraintLayout2">
+
+            <TextView
+                android:id="@+id/id_txt_group_question"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_txt_red_settings_custom"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/str_txt_group_question"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/id_txt_group_question_forbidden1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/style_txt_gray_settings_custom"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_txt_group_forbidden1"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_txt_group_question" />
+
+            <TextView
+                android:id="@+id/id_txt_group_question_forbidden2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/style_txt_gray_settings_custom"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_txt_group_forbidden2"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_txt_group_question_forbidden1" />
+
+            <TextView
+                android:id="@+id/id_txt_group_question_forbidden3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/style_txt_gray_settings_custom"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_txt_group_forbidden3"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_txt_group_question_forbidden2" />
+
+            <TextView
+                android:id="@+id/id_txt_group_question_forbidden4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/style_txt_gray_settings_custom"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_txt_group_forbidden4"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_txt_group_question_forbidden3" />
+
+            <TextView
+                android:id="@+id/id_txt_group_question_forbidden5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/style_txt_gray_settings_custom"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_txt_group_forbidden5"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_txt_group_question_forbidden4" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_txt_settings"
+            android:padding="4dp"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_constraintLayout3">
+
+            <Button
+                android:id="@+id/id_btn_pas"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_button_yellow"
+                android:onClick="OnClick_PasActions"
+                android:text="@string/str_btn_pas"
+                android:textColor="@color/colorGray"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/id_constraintLayout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/id_btn_pas"
+                app:layout_constraintRight_toLeftOf="@+id/id_btn_mola"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/id_btn_tabu"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_button_red"
+                    android:onClick="OnClick_FalseActions"
+                    android:text="@string/str_btn_tabu"
+                    android:textColor="@color/colorGray"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/id_btn_true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/style_button_green"
+                    android:onClick="OnClick_TrueActions"
+                    android:text="@string/str_btn_true"
+                    android:textColor="@color/colorGray"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/id_btn_tabu"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlHardcoded" />
+            </android.support.constraint.ConstraintLayout>
+
+            <Button
+                android:id="@+id/id_btn_mola"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_button_blue"
+                android:onClick="OnClick_MolaActions"
+                android:text="@string/str_btn_mola"
+                android:textColor="@color/colorGray"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+        <!--
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/id_constraintLayout_adMob2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/style_txt_settings"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_constraintLayout4">
+
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/id_adView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        app:adSize="BANNER"
+                        app:adUnitId="@string/str_banner_ad_unit_id2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+        -->
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
